@@ -1,0 +1,48 @@
+{
+  "model_type": "hourly_lstm",
+  "feature_group": "all_features",
+  "features": [
+    "price_lag_48",
+    "price_lag_168",
+    "price_roll_24_safe",
+    "hour",
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_holiday",
+    "hour_sin",
+    "hour_cos",
+    "dow_sin",
+    "dow_cos",
+    "load_forecast_mw",
+    "forecast_gen_outage_mw_rto",
+    "coal_mw_lag_48",
+    "gas_mw_lag_48",
+    "nuclear_mw_lag_48",
+    "wind_mw_lag_48",
+    "solar_mw_lag_48",
+    "hydro_mw_lag_48",
+    "oil_mw_lag_48",
+    "storage_mw_lag_48",
+    "multiple_fuels_mw_lag_48",
+    "other_renewables_mw_lag_48",
+    "renewable_mw_lag_48"
+  ],
+  "lookback": 48,
+  "hyperparameters": {
+    "hidden_size": 128.0,
+    "num_layers": 1.0,
+    "dropout": 0.3,
+    "learning_rate": 0.001,
+    "batch_size": 32.0
+  },
+  "val_MAE": 76.32315063476562,
+  "val_RMSE": 177.91473884103868,
+  "test_MAE": 7.68488883972168,
+  "test_RMSE": 13.863596035803456,
+  "selection": {
+    "feature_set": "all_features",
+    "feature_selection": "fixed (no group sweep) \u2014 see \u00a72.8",
+    "hyperparameter_selection": "random search by val RMSE \u2014 see \u00a72.9"
+  }
+}
