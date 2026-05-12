@@ -36,10 +36,10 @@
     "learning_rate": 0.001,
     "batch_size": 32.0
   },
-  "val_MAE": 76.32315063476562,
-  "val_RMSE": 177.91473884103868,
-  "test_MAE": 7.68488883972168,
-  "test_RMSE": 13.863596035803456,
+  "val_MAE": 76.32268524169922,
+  "val_RMSE": 177.91381120854558,
+  "test_MAE": 7.68505859375,
+  "test_RMSE": 13.863882748820652,
   "selection": {
     "feature_set": "all_features",
     "feature_selection": "fixed (no group sweep) \u2014 see \u00a72.8",
